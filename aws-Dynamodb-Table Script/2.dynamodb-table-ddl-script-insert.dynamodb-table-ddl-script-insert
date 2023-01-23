@@ -1,0 +1,1 @@
+aws dynamodb create-table --cli-input-json file://Order_Table_Creation_JSON_Script.json

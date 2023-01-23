@@ -1,0 +1,36 @@
+plugins {
+    id 'org.springframework.boot' version '2.6.3'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+}
+
+group = 'com.nexient'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    implementation project(":aws-dynamodb-multimodule-api-data")
+    implementation project(":aws-dynamodb-multimodule-api-service")
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'io.springfox:springfox-swagger2:3.0.0'
+    implementation 'io.springfox:springfox-swagger-ui:3.0.0'
+    compileOnly 'org.projectlombok:lombok:1.18.22'
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+
+    implementation 'org.springframework.data:spring-data-releasetrain:1.4.6.RELEASE'
+    implementation 'com.amazonaws:aws-java-sdk-dynamodb:1.12.176'
+    implementation 'com.github.derjust:spring-data-dynamodb:5.1.0'
+}
+
+test {
+    useJUnitPlatform()
+}

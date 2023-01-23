@@ -1,0 +1,27 @@
+{
+    "Orders": [
+        {
+            "PutRequest": {
+                "Item": {
+                    "id": {"S":"V100"},
+                    "item": {"S":"Veg Pizza"},
+					"qty": {"S":"1"},
+					"price": {"S":"10.50"}
+                   
+                }
+            }
+        },
+		
+		{
+            "PutRequest": {
+                "Item": {
+                    "id": {"S":"N100"},
+                    "item": {"S":"Chicken Briyani"},
+					"qty": {"S":"1"},
+					"price": {"S":"25"}
+                   
+                }
+            }
+        }
+    ]
+}

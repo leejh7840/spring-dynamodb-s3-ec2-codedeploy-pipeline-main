@@ -1,0 +1,6 @@
+rootProject.name = 'dynamo'
+include 'aws-dynamodb-multimodule-api-model'
+include 'aws-dynamodb-multimodule-api-data'
+include 'aws-dynamodb-multimodule-api-service'
+include 'aws-dynamodb-multimodule-api-web'
+

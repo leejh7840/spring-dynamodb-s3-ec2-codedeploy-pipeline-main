@@ -1,0 +1,1 @@
+aws dynamodb batch-write-item --request-items file://3.dynamodb_table_value_insert_dml_JSON_script

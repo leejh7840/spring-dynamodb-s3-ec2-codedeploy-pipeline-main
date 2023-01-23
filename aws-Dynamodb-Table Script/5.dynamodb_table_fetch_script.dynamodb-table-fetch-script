@@ -1,0 +1,5 @@
+-- To Fetch All the records in a table
+aws dynamodb execute-statement --statement "SELECT * FROM Orders"
+
+-- To Fetch a particular record in a table.
+aws dynamodb execute-statement --statement "SELECT * FROM Orders where id='V100'"
